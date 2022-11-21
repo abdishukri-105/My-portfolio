@@ -1,4 +1,27 @@
+
+
 .landing-page {
-    background-image: url();
+    background-image: url(images/cool.jpg);
     
 }
+
+* {
+    font-size: medium;
+    background-color: rgb(111, 108, 104);
+
+}
+/*
+.header {
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    left: 900px;
+   
+}
+
+.ul {
+    list-style: none;
+}
+*/
