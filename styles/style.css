@@ -18,6 +18,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: black;
 }
 
 .navbar {
@@ -169,6 +170,51 @@ body{
 .search-btn:hover {
     background-color: rgb(250, 100, 125);
     cursor: pointer;
+}
+
+
+/* about section */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 10%;
+    height: 35rem;
+
+   
+}
+
+.about-img {
+    background-image: url("../images/pexels-pixabay-432743.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-me {
+    width: 60%;
+    margin-left: 2rem;
+    color: white;
+}
+
+.about-me h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+
+}
+
+.about-me h3 {
+    color: var(--color2);
+    margin-bottom: 1rem;
+}
+
+.about-me p {
+    margin-bottom: 2rem;
 }
 
 
