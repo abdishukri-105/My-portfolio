@@ -29,14 +29,23 @@ body{
     z-index: 1;
     top: 0;
     padding:  1.3rem ;
+    border-bottom: red;
 }
 
 .red {
+    padding: 0.5rem;
     color: var(--color2);
+    background-color: white;
+    border-radius: 1rem 0 0 1rem;
 }
 
+
+
 .white {
+    padding: 0.5rem;
     color: white;
+    background-color: var(--color2);
+    border-radius: 0 1rem 1rem 0;
 }
 .navbrand {
     /* color: var(--color2); */
@@ -48,9 +57,8 @@ body{
 }
 
 .navlinks {
-   
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
@@ -74,14 +82,21 @@ body{
 } 
 
 
-.navsubscribe button {
+.navsubscribe  {
     color: white;
     background-color: var(--color2);
-    padding: 0.3rem;
-    letter-spacing: 0.1rem;
-    font-size: large;
-    border-radius: 1.5rem;
-    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.navsubscribe a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.7rem;
+    font-size: 1.3rem;
 }
 
 .navsubscribe button:hover {
@@ -91,7 +106,7 @@ body{
 
 
 .hero-section {
-    background-image: url("../images/pexels-pixabay-356147.jpg");
+    background-image: url("../images/port-landing-page.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -139,7 +154,10 @@ body{
     display: flex;
     justify-content: space-between;
     padding-bottom: 1.3rem;
+    
 }
+
+
 
 .searchbar {
     display: flex;
@@ -182,15 +200,18 @@ body{
     margin-left: 5%;
     margin-right: 10%;
     height: 35rem;
-
+    margin-top: 2rem;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Move the text 50px down */
+    transition: all 2s ease-in-out; /* Animate over 0.5 seconds */
    
 }
 
 .about-img {
-    background-image: url("../images/pexels-pixabay-432743.jpg");
+    background-image: url("../images/about-me-photo.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
 }
 
@@ -198,6 +219,12 @@ body{
     width: 60%;
     margin-left: 2rem;
     color: white;
+ 
+}
+
+.about.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Return to its original position */
 }
 
 .about-me h1 {
@@ -215,10 +242,25 @@ body{
 
 .about-me p {
     margin-bottom: 2rem;
+    line-height: 1.5rem;
 }
 
 
+.about-me button {
+    margin-bottom: 1rem;
+    background: var(--color2);
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
 
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(247, 71, 71);
+}
 
 /* responsive to tablet and phones */
 
